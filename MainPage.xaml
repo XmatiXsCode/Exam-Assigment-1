@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*" BackgroundColor="CadetBlue">
+            <VerticalStackLayout Grid.Column="0" Grid.Row="0" Margin="50, 50, 0, 0" Padding="0,45,0,0"  BackgroundColor="CadetBlue">
+                <HorizontalStackLayout Margin="0,0,0,25">
+                    <Label Text="Numer" VerticalTextAlignment="Center" WidthRequest="150" TextColor="Black"></Label>
+                    <Entry BackgroundColor="White" TextColor="Black" WidthRequest="300"></Entry>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Margin="0,0,0,25">
+                    <Label Text="Imię" VerticalTextAlignment="Center" WidthRequest="150" TextColor="Black"></Label>
+                    <Entry BackgroundColor="White" TextColor="Black" WidthRequest="300"></Entry>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout  Margin="0,0,0,25">
+                    <Label Text="Nazwisko" VerticalTextAlignment="Center" WidthRequest="150" TextColor="Black"></Label>
+                    <Entry BackgroundColor="White" TextColor="Black" WidthRequest="300"></Entry>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="CadetBlue" Margin="50,0,0,0">
+                <Frame CornerRadius="10" BorderColor="White" BackgroundColor="CadetBlue" HorizontalOptions="Start" WidthRequest="450" HeightRequest="170">
+                    <StackLayout>
+                        <RadioButton IsChecked="True" Content="niebieskie" TextColor="Black"></RadioButton>
+                        <RadioButton Content="zielone" TextColor="Black"></RadioButton>
+                        <RadioButton Content="piwne" TextColor="Black"></RadioButton>
+                    </StackLayout>
+                </Frame>
+                <StackLayout HorizontalOptions="Start" VerticalOptions="Start" TranslationY="-180" BackgroundColor="CadetBlue" Margin="10,0,0,0">
+                    <Label Text="Kolor oczu" HorizontalTextAlignment="Center" TextColor="Black" WidthRequest="75"/>
+                </StackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="1" Grid.Row="0" Margin="0,95,0,0" Grid.RowSpan="2">
+                <HorizontalStackLayout>
+                    <Image Source="profil.png" HeightRequest="300" Margin="0,0,50,0" HorizontalOptions="Center"></Image>
+                    <Image Source="odcisk.png" HeightRequest="300" HorizontalOptions="Center"></Image>
+                </HorizontalStackLayout>
+                <Button WidthRequest="300" Margin="0,25,0,0" HorizontalOptions="Center" BackgroundColor="White" Text="OK"></Button>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
